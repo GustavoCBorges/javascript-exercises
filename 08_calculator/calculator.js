@@ -15,11 +15,19 @@ const multiply = function(a) {
 };
 
 const power = function(a,b) {
-	
+	return a ** b;
 };
 
-const factorial = function() {
-	
+const factorial = function(a) {
+  if (a == 0) {
+    return 1;
+  } else {
+    const numbers = [];
+    for (let i = 1 ; i <= a ; i++) {
+      numbers.push(i);
+    };
+    return numbers.reduce((valorTotal,valorAtual) => valorTotal * valorAtual);
+  };
 };
 
 // Do not edit below this line
